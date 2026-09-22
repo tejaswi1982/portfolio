@@ -1,0 +1,32 @@
+{
+  "portrait": {
+    "src": "/assets/portrait.webp",
+    "width": 1536,
+    "height": 1024,
+    "alt": "Illustrated portrait of Abhinandan Tejaswi with orange glasses and a sketched construction-line background",
+    "source": "20251022_1320_Expressive Urban Portrait_remix_01k85e8hy1evarbqvk41bk982z.png"
+  },
+  "photos": [
+    {
+      "src": "/assets/detour-0.webp",
+      "width": 2048,
+      "height": 1536,
+      "alt": "A small motorcycle rider in a vast mountain plain",
+      "source": "468853157_10162494735942288_8575538927169642503_n.jpg"
+    },
+    {
+      "src": "/assets/detour-1.webp",
+      "width": 960,
+      "height": 540,
+      "alt": "A motorcycle beside a high-altitude lake",
+      "source": "657067228_10164643871682288_2664699723892897472_n.jpg"
+    },
+    {
+      "src": "/assets/detour-2.webp",
+      "width": 960,
+      "height": 720,
+      "alt": "A lone rider on a long empty road",
+      "source": "468295259_10162276011512288_803491005347081818_n.jpg"
+    }
+  ]
+}

@@ -1,0 +1,1102 @@
+[
+  {
+    "slug": "prime",
+    "title": "CNBC-TV18 Prime",
+    "client": "CNBC-TV18 Prime",
+    "category": "film",
+    "subCategory": "Launch Film",
+    "year": null,
+    "role": "Writing / Creative Direction / Co-production",
+    "description": "Launch film for CNBC-TV18 Prime.",
+    "note": "",
+    "headline": "A different perspective.",
+    "video": {
+      "src": "/assets/prime.mp4",
+      "poster": "/assets/prime-poster.webp",
+      "width": 1280,
+      "height": 720,
+      "duration": 45.04
+    },
+    "assets": [],
+    "heroAsset": "/assets/prime-poster.webp",
+    "poster": "/assets/prime-poster.webp",
+    "preferredSource": "CNBC PRIME LAUNCH PROMO.mp4",
+    "nativeResolution": [
+      1280,
+      720
+    ],
+    "aspectRatio": "16:9",
+    "recommendedDisplaySize": 960,
+    "featured": true,
+    "priority": 1,
+    "projectType": "film",
+    "commissionStatus": "portfolio",
+    "tags": [],
+    "sourceResolutionNote": "Supplied dimensions, not a claim of original camera resolution.",
+    "videoSources": [
+      {
+        "name": "CNBC PRIME LAUNCH PROMO(1).mp4",
+        "width": 1280,
+        "height": 720,
+        "aspectRatio": "16:9",
+        "sampleAspectRatio": "1:1",
+        "duration": 45.04,
+        "bitrate": 1489094,
+        "bytes": 8409587,
+        "sha256": "de04902a3675954feaf815aa2e2865920f37d1c7a1391f0a5ccb0830ee14039e"
+      },
+      {
+        "name": "CNBC PRIME LAUNCH PROMO.mp4",
+        "width": 1280,
+        "height": 720,
+        "aspectRatio": "16:9",
+        "sampleAspectRatio": "1:1",
+        "duration": 45.04,
+        "bitrate": 1489094,
+        "bytes": 8409587,
+        "sha256": "de04902a3675954feaf815aa2e2865920f37d1c7a1391f0a5ccb0830ee14039e"
+      },
+      {
+        "name": "CNBC PRIME LAUNCH PROMO_1080p.mp4",
+        "width": 1920,
+        "height": 1080,
+        "aspectRatio": "16:9",
+        "sampleAspectRatio": "1:1",
+        "duration": 45.04,
+        "bitrate": 4424343,
+        "bytes": 24986254,
+        "sha256": "9ccc09ae0ae6ae9517a11a99680ef175c4a926d2d83bb36eb943e84555a1b5c2"
+      }
+    ],
+    "aiTools": [
+      "Kling 2.5",
+      "Google Veo 3.1"
+    ]
+  },
+  {
+    "slug": "awaaz",
+    "title": "Think before you invest",
+    "client": "CNBC Awaaz",
+    "category": "film",
+    "subCategory": "Public service film",
+    "year": null,
+    "role": null,
+    "description": "A public service film about the emotions we bring to investing.",
+    "note": "",
+    "headline": "Emotion makes a great performance.",
+    "video": {
+      "src": "/assets/awaaz.mp4",
+      "poster": "/assets/awaaz-poster.webp",
+      "width": 1920,
+      "height": 1080,
+      "duration": 20.0
+    },
+    "assets": [],
+    "heroAsset": "/assets/awaaz-poster.webp",
+    "poster": "/assets/awaaz-poster.webp",
+    "preferredSource": "CNBC Awaaz PSA.mp4",
+    "nativeResolution": [
+      1920,
+      1080
+    ],
+    "aspectRatio": "16:9",
+    "recommendedDisplaySize": 1100,
+    "featured": true,
+    "priority": 2,
+    "projectType": "film",
+    "commissionStatus": "portfolio",
+    "tags": [],
+    "sourceResolutionNote": "Supplied dimensions, not a claim of original camera resolution.",
+    "videoSources": [
+      {
+        "name": "CNBC Awaaz PSA(1).mp4",
+        "width": 1920,
+        "height": 1080,
+        "aspectRatio": "16:9",
+        "sampleAspectRatio": "1:1",
+        "duration": 20.0,
+        "bitrate": 2158036,
+        "bytes": 5411826,
+        "sha256": "08635ff9e8e18fe5ad88fc86947a13ea149951022b1554bf137257297a72eab3"
+      },
+      {
+        "name": "CNBC Awaaz PSA(2).mp4",
+        "width": 1920,
+        "height": 1080,
+        "aspectRatio": "16:9",
+        "sampleAspectRatio": "1:1",
+        "duration": 20.0,
+        "bitrate": 2158036,
+        "bytes": 5411826,
+        "sha256": "08635ff9e8e18fe5ad88fc86947a13ea149951022b1554bf137257297a72eab3"
+      },
+      {
+        "name": "CNBC Awaaz PSA.mp4",
+        "width": 1920,
+        "height": 1080,
+        "aspectRatio": "16:9",
+        "sampleAspectRatio": "1:1",
+        "duration": 20.0,
+        "bitrate": 2158036,
+        "bytes": 5411826,
+        "sha256": "08635ff9e8e18fe5ad88fc86947a13ea149951022b1554bf137257297a72eab3"
+      }
+    ],
+    "aiTools": [
+      "Kling 2.5"
+    ]
+  },
+  {
+    "slug": "corner-seat",
+    "title": "Corner Seat",
+    "client": "Channel [V]",
+    "category": "film",
+    "subCategory": "TV promo",
+    "year": null,
+    "role": null,
+    "description": "A television promo for Corner Seat on Channel [V].",
+    "note": "",
+    "headline": "A little cinema. A lot of character.",
+    "video": {
+      "src": "/assets/corner-seat.mp4",
+      "poster": "/assets/corner-seat-poster.webp",
+      "width": 600,
+      "height": 480,
+      "duration": 30.04
+    },
+    "assets": [],
+    "heroAsset": "/assets/corner-seat-poster.webp",
+    "poster": "/assets/corner-seat-poster.webp",
+    "preferredSource": "[V] Corner Seat Promo_480p.mp4",
+    "nativeResolution": [
+      600,
+      480
+    ],
+    "aspectRatio": "5:4",
+    "recommendedDisplaySize": 480,
+    "featured": true,
+    "priority": 3,
+    "projectType": "film",
+    "commissionStatus": "portfolio",
+    "tags": [],
+    "sourceResolutionNote": "Supplied dimensions, not a claim of original camera resolution.",
+    "videoSources": [
+      {
+        "name": "[V] Corner Seat Promo_1080p.mp4",
+        "width": 1920,
+        "height": 1080,
+        "aspectRatio": "16:9",
+        "sampleAspectRatio": "1:1",
+        "duration": 30.04,
+        "bitrate": 3538281,
+        "bytes": 13319865,
+        "sha256": "61efcc4861becf8aa6714a1e83fd1aff96bcde896e1eebfed16df0498f341702"
+      },
+      {
+        "name": "[V] Corner Seat Promo_480p(1).mp4",
+        "width": 600,
+        "height": 480,
+        "aspectRatio": "5:4",
+        "sampleAspectRatio": "1:1",
+        "duration": 30.04,
+        "bitrate": 721921,
+        "bytes": 2717700,
+        "sha256": "15ce74d79d75debe99c8fd2bc4a5a13460eb2a6d992444e2ad5cdefc79b5a145"
+      },
+      {
+        "name": "[V] Corner Seat Promo_480p.mp4",
+        "width": 600,
+        "height": 480,
+        "aspectRatio": "5:4",
+        "sampleAspectRatio": "1:1",
+        "duration": 30.04,
+        "bitrate": 721921,
+        "bytes": 2717700,
+        "sha256": "15ce74d79d75debe99c8fd2bc4a5a13460eb2a6d992444e2ad5cdefc79b5a145"
+      }
+    ]
+  },
+  {
+    "slug": "leadership",
+    "title": "Leadership",
+    "client": "CNBC-TV18",
+    "category": "film",
+    "subCategory": "Brand promo",
+    "year": null,
+    "role": null,
+    "description": "A brand promo that moves from the street to the skyline.",
+    "note": "",
+    "headline": "See the bigger picture.",
+    "video": {
+      "src": "/assets/leadership.mp4",
+      "poster": "/assets/leadership-poster.webp",
+      "width": 1024,
+      "height": 576,
+      "duration": 40.04
+    },
+    "assets": [],
+    "heroAsset": "/assets/leadership-poster.webp",
+    "poster": "/assets/leadership-poster.webp",
+    "preferredSource": "01-cnbc-tv18-leadership-promo.mp4",
+    "nativeResolution": [
+      1024,
+      576
+    ],
+    "aspectRatio": "16:9",
+    "recommendedDisplaySize": 720,
+    "featured": false,
+    "priority": 4,
+    "projectType": "film",
+    "commissionStatus": "portfolio",
+    "tags": [],
+    "sourceResolutionNote": "Supplied dimensions, not a claim of original camera resolution.",
+    "videoSources": [
+      {
+        "name": "01-cnbc-tv18-leadership-promo(1).mp4",
+        "width": 1024,
+        "height": 576,
+        "aspectRatio": "16:9",
+        "sampleAspectRatio": "1:1",
+        "duration": 40.04,
+        "bitrate": 1885827,
+        "bytes": 9458389,
+        "sha256": "d728f67c25e51bf3ad78c26e21250924a3cc60f7b8cdddd0ff04960d2d879dba"
+      },
+      {
+        "name": "01-cnbc-tv18-leadership-promo.mp4",
+        "width": 1024,
+        "height": 576,
+        "aspectRatio": "16:9",
+        "sampleAspectRatio": "1:1",
+        "duration": 40.04,
+        "bitrate": 1885827,
+        "bytes": 9458389,
+        "sha256": "d728f67c25e51bf3ad78c26e21250924a3cc60f7b8cdddd0ff04960d2d879dba"
+      },
+      {
+        "name": "01-cnbc-tv18-leadership-promo_1080p.mp4",
+        "width": 1920,
+        "height": 1080,
+        "aspectRatio": "16:9",
+        "sampleAspectRatio": "1:1",
+        "duration": 40.04,
+        "bitrate": 7687352,
+        "bytes": 38555995,
+        "sha256": "6829127884b39867ac4f847b0dc7564f1f89cc11e4f0076ddc018d19eb5251c4"
+      }
+    ]
+  },
+  {
+    "slug": "mad-about-markets",
+    "title": "Mad About Markets",
+    "client": "CNBC-TV18",
+    "category": "film",
+    "subCategory": "TV promo",
+    "year": null,
+    "role": null,
+    "description": "A colourful take on the language and energy of the markets.",
+    "note": "",
+    "headline": "Market feels.",
+    "video": {
+      "src": "/assets/mad-about-markets.mp4",
+      "poster": "/assets/mad-about-markets-poster.webp",
+      "width": 1280,
+      "height": 720,
+      "duration": 40.04
+    },
+    "assets": [],
+    "heroAsset": "/assets/mad-about-markets-poster.webp",
+    "poster": "/assets/mad-about-markets-poster.webp",
+    "preferredSource": "MAD ABOUT MARKETS PROMO_720p.mp4",
+    "nativeResolution": [
+      1280,
+      720
+    ],
+    "aspectRatio": "16:9",
+    "recommendedDisplaySize": 960,
+    "featured": true,
+    "priority": 5,
+    "projectType": "film",
+    "commissionStatus": "portfolio",
+    "tags": [],
+    "sourceResolutionNote": "Supplied dimensions, not a claim of original camera resolution.",
+    "videoSources": [
+      {
+        "name": "MAD ABOUT MARKETS PROMO_720p.mp4",
+        "width": 1280,
+        "height": 720,
+        "aspectRatio": "16:9",
+        "sampleAspectRatio": "1:1",
+        "duration": 40.04,
+        "bitrate": 1815373,
+        "bytes": 9099755,
+        "sha256": "56574e4fd054fd844ddea85fde2833e5d08c597480f4804e80ebd79bfd9c722e"
+      }
+    ]
+  },
+  {
+    "slug": "dot-com",
+    "title": "CNBCTV18.com",
+    "client": "CNBC-TV18",
+    "category": "film",
+    "subCategory": "Digital launch promo",
+    "year": null,
+    "role": null,
+    "description": "A lively mix of subjects, people and ideas for CNBCTV18.com.",
+    "note": "",
+    "headline": "More than the markets.",
+    "video": {
+      "src": "/assets/dot-com.mp4",
+      "poster": "/assets/dot-com-poster.webp",
+      "width": 1280,
+      "height": 720,
+      "duration": 40.0
+    },
+    "assets": [],
+    "heroAsset": "/assets/dot-com-poster.webp",
+    "poster": "/assets/dot-com-poster.webp",
+    "preferredSource": "CNBC TV18 COM Promo Mix VO Revised 5_720p.mp4",
+    "nativeResolution": [
+      1280,
+      720
+    ],
+    "aspectRatio": "16:9",
+    "recommendedDisplaySize": 960,
+    "featured": false,
+    "priority": 6,
+    "projectType": "film",
+    "commissionStatus": "portfolio",
+    "tags": [],
+    "sourceResolutionNote": "Supplied dimensions, not a claim of original camera resolution.",
+    "videoSources": [
+      {
+        "name": "CNBC TV18 COM Promo Mix VO Revised 5_720p.mp4",
+        "width": 1280,
+        "height": 720,
+        "aspectRatio": "16:9",
+        "sampleAspectRatio": "1:1",
+        "duration": 40.0,
+        "bitrate": 2150657,
+        "bytes": 10767916,
+        "sha256": "ecc593c5d2459316b92c4c0f1135fda60b3f531528bce66d5d24ef778dbe0fb0"
+      }
+    ]
+  },
+  {
+    "slug": "bro-bytes-dosa",
+    "title": "Bro Bytes: Sai Swad Dosa",
+    "client": "History TV18",
+    "category": "film",
+    "subCategory": "Digital film",
+    "year": null,
+    "role": "Wrote, produced and anchored.",
+    "description": "Wrote, produced and anchored digital videos for History TV18.",
+    "note": "",
+    "headline": "One more stop.",
+    "video": {
+      "src": "/assets/bro-bytes-dosa.mp4",
+      "poster": "/assets/bro-bytes-dosa-poster.webp",
+      "width": 1280,
+      "height": 720,
+      "duration": 136.08
+    },
+    "assets": [],
+    "heroAsset": "/assets/bro-bytes-dosa-poster.webp",
+    "poster": "/assets/bro-bytes-dosa-poster.webp",
+    "preferredSource": "Bro Bytes - SAI DOSA.mp4",
+    "nativeResolution": [
+      1280,
+      720
+    ],
+    "aspectRatio": "16:9",
+    "recommendedDisplaySize": 880,
+    "featured": true,
+    "priority": 7,
+    "projectType": "film",
+    "commissionStatus": "portfolio",
+    "tags": [],
+    "sourceResolutionNote": "Supplied dimensions, not a claim of original camera resolution.",
+    "videoSources": [
+      {
+        "name": "Bro Bytes - SAI DOSA(1).mp4",
+        "width": 1280,
+        "height": 720,
+        "aspectRatio": "16:9",
+        "sampleAspectRatio": "1:1",
+        "duration": 136.08,
+        "bitrate": 1394477,
+        "bytes": 23780032,
+        "sha256": "90cbb8bc582f429f169df97620f2889007c3181b8d4025ead3ddca71e24cae16"
+      },
+      {
+        "name": "Bro Bytes - SAI DOSA.mp4",
+        "width": 1280,
+        "height": 720,
+        "aspectRatio": "16:9",
+        "sampleAspectRatio": "1:1",
+        "duration": 136.08,
+        "bitrate": 1394477,
+        "bytes": 23780032,
+        "sha256": "90cbb8bc582f429f169df97620f2889007c3181b8d4025ead3ddca71e24cae16"
+      },
+      {
+        "name": "Bro Bytes - SAI DOSA_1080p.mp4",
+        "width": 1920,
+        "height": 1080,
+        "aspectRatio": "16:9",
+        "sampleAspectRatio": "1:1",
+        "duration": 136.08,
+        "bitrate": 5831710,
+        "bytes": 99341236,
+        "sha256": "9068356ce8f9e20adfa68b60b1678f3abb1595ea0ef580653a0defdd014da9c3"
+      }
+    ],
+    "result": "Garnered close to 1 million views on Facebook.",
+    "titleLines": [
+      "Bro Bytes:",
+      "Sai Swad Dosa"
+    ],
+    "selectedNote": "Wrote, produced and anchored. Garnered close to 1 million views on Facebook."
+  },
+  {
+    "slug": "777",
+    "title": "777 Contest",
+    "client": "Channel [V]",
+    "category": "film",
+    "subCategory": "Contest promo",
+    "year": null,
+    "role": null,
+    "description": "A contest promo from the Channel [V] archive.",
+    "note": "",
+    "headline": "Pressure. With a punchline.",
+    "video": {
+      "src": "/assets/777.mp4",
+      "poster": "/assets/777-poster.webp",
+      "width": 768,
+      "height": 576,
+      "duration": 40.0
+    },
+    "assets": [],
+    "heroAsset": "/assets/777-poster.webp",
+    "poster": "/assets/777-poster.webp",
+    "preferredSource": "05-channel-v-777-contest-promo.mp4",
+    "nativeResolution": [
+      768,
+      576
+    ],
+    "aspectRatio": "4:3",
+    "recommendedDisplaySize": 560,
+    "featured": false,
+    "priority": 8,
+    "projectType": "film",
+    "commissionStatus": "portfolio",
+    "tags": [],
+    "sourceResolutionNote": "Supplied dimensions, not a claim of original camera resolution.",
+    "videoSources": [
+      {
+        "name": "05-channel-v-777-contest-promo(1).mp4",
+        "width": 768,
+        "height": 576,
+        "aspectRatio": "4:3",
+        "sampleAspectRatio": "1:1",
+        "duration": 40.0,
+        "bitrate": 1893425,
+        "bytes": 9496493,
+        "sha256": "d5e3f2a189e0b5cb891d6c2b3e5869ed56fb681ca1c71221b0bcd9a6633bd86d"
+      },
+      {
+        "name": "05-channel-v-777-contest-promo.mp4",
+        "width": 768,
+        "height": 576,
+        "aspectRatio": "4:3",
+        "sampleAspectRatio": "1:1",
+        "duration": 40.0,
+        "bitrate": 1893425,
+        "bytes": 9496493,
+        "sha256": "d5e3f2a189e0b5cb891d6c2b3e5869ed56fb681ca1c71221b0bcd9a6633bd86d"
+      },
+      {
+        "name": "05-channel-v-777-contest-promo_1080p.mp4",
+        "width": 1920,
+        "height": 1080,
+        "aspectRatio": "16:9",
+        "sampleAspectRatio": "1:1",
+        "duration": 40.0,
+        "bitrate": 2848905,
+        "bytes": 14288714,
+        "sha256": "35906d62630fae39d5d162323acb3837f14c7b458bb0eed9e2a6ce13ee22d230"
+      }
+    ]
+  },
+  {
+    "slug": "bro-bytes-ashok",
+    "title": "Bro Bytes: Ashok Vada Pav",
+    "client": "History TV18",
+    "category": "film",
+    "subCategory": "Digital film",
+    "year": null,
+    "role": "Wrote, produced and anchored.",
+    "description": "Wrote, produced and anchored digital videos for History TV18.",
+    "note": "",
+    "headline": "Stories from the street.",
+    "video": {
+      "src": "/assets/bro-bytes-ashok.mp4",
+      "poster": "/assets/bro-bytes-ashok-poster.webp",
+      "width": 1280,
+      "height": 720,
+      "duration": 117.96
+    },
+    "assets": [],
+    "heroAsset": "/assets/bro-bytes-ashok-poster.webp",
+    "poster": "/assets/bro-bytes-ashok-poster.webp",
+    "preferredSource": "Bro Bytes - Ashok Vada Pav (Kirto College).mp4",
+    "nativeResolution": [
+      1280,
+      720
+    ],
+    "aspectRatio": "16:9",
+    "recommendedDisplaySize": 880,
+    "featured": false,
+    "priority": 9,
+    "projectType": "film",
+    "commissionStatus": "portfolio",
+    "tags": [],
+    "sourceResolutionNote": "Supplied dimensions, not a claim of original camera resolution.",
+    "videoSources": [
+      {
+        "name": "Bro Bytes - Ashok Vada Pav (Kirto College)(1).mp4",
+        "width": 1280,
+        "height": 720,
+        "aspectRatio": "16:9",
+        "sampleAspectRatio": "1:1",
+        "duration": 117.96,
+        "bitrate": 1495074,
+        "bytes": 22110678,
+        "sha256": "dd563b714cac99999b1d62fbb46f90ee8ba297b75a11cd6708e0a91b5428845a"
+      },
+      {
+        "name": "Bro Bytes - Ashok Vada Pav (Kirto College).mp4",
+        "width": 1280,
+        "height": 720,
+        "aspectRatio": "16:9",
+        "sampleAspectRatio": "1:1",
+        "duration": 117.96,
+        "bitrate": 1495074,
+        "bytes": 22110678,
+        "sha256": "dd563b714cac99999b1d62fbb46f90ee8ba297b75a11cd6708e0a91b5428845a"
+      },
+      {
+        "name": "Bro Bytes - Ashok Vada Pav (Kirto College)_1080p.mp4",
+        "width": 1920,
+        "height": 1080,
+        "aspectRatio": "16:9",
+        "sampleAspectRatio": "1:1",
+        "duration": 117.96,
+        "bitrate": 6077996,
+        "bytes": 89792273,
+        "sha256": "1f6f27bd1295f101f5e85fa7638dc4c327e72178a304675832fca6c47b83c651"
+      }
+    ],
+    "result": "Around 7 lakh views on Facebook."
+  },
+  {
+    "slug": "gst",
+    "title": "GST 2.0",
+    "client": "CNBC Awaaz",
+    "category": "film",
+    "subCategory": "TV promo",
+    "year": 2025,
+    "role": null,
+    "description": "A short promo for GST 2.0 coverage.",
+    "note": "",
+    "headline": "A change at the checkout.",
+    "video": {
+      "src": "/assets/gst.mp4",
+      "poster": "/assets/gst-poster.webp",
+      "width": 1920,
+      "height": 1074,
+      "duration": 15.0
+    },
+    "assets": [],
+    "heroAsset": "/assets/gst-poster.webp",
+    "poster": "/assets/gst-poster.webp",
+    "preferredSource": "GST PROMO_1080p.mp4",
+    "nativeResolution": [
+      1920,
+      1074
+    ],
+    "aspectRatio": "320:179",
+    "recommendedDisplaySize": 1040,
+    "featured": false,
+    "priority": 10,
+    "projectType": "film",
+    "commissionStatus": "portfolio",
+    "tags": [],
+    "sourceResolutionNote": "Supplied dimensions, not a claim of original camera resolution.",
+    "videoSources": [
+      {
+        "name": "GST PROMO_1080p(1).mp4",
+        "width": 1920,
+        "height": 1074,
+        "aspectRatio": "320:179",
+        "sampleAspectRatio": "1:1",
+        "duration": 15.0,
+        "bitrate": 2729244,
+        "bytes": 5141130,
+        "sha256": "078bada304994838f155025fdd856d8665c645845807a4d9b7eaaf422a091615"
+      },
+      {
+        "name": "GST PROMO_1080p(2).mp4",
+        "width": 1920,
+        "height": 1074,
+        "aspectRatio": "320:179",
+        "sampleAspectRatio": "1:1",
+        "duration": 15.0,
+        "bitrate": 2729244,
+        "bytes": 5141130,
+        "sha256": "078bada304994838f155025fdd856d8665c645845807a4d9b7eaaf422a091615"
+      },
+      {
+        "name": "GST PROMO_1080p.mp4",
+        "width": 1920,
+        "height": 1074,
+        "aspectRatio": "320:179",
+        "sampleAspectRatio": "1:1",
+        "duration": 15.0,
+        "bitrate": 2729244,
+        "bytes": 5141130,
+        "sha256": "078bada304994838f155025fdd856d8665c645845807a4d9b7eaaf422a091615"
+      }
+    ],
+    "aiTools": [
+      "Google Veo 3.1"
+    ]
+  },
+  {
+    "slug": "x-ray",
+    "title": "CNBC-TV18 Prime: Brand Promo",
+    "client": "CNBC-TV18 Prime",
+    "category": "film",
+    "subCategory": "Brand Promo",
+    "year": 2025,
+    "role": null,
+    "description": "Brand promo for CNBC-TV18 Prime.",
+    "note": "",
+    "headline": "Look inside.",
+    "video": {
+      "src": "/assets/x-ray.mp4",
+      "poster": "/assets/x-ray-poster.webp",
+      "width": 1920,
+      "height": 1080,
+      "duration": 15.0
+    },
+    "assets": [],
+    "heroAsset": "/assets/x-ray-poster.webp",
+    "poster": "/assets/x-ray-poster.webp",
+    "preferredSource": "X Ray Monitor 10 09 2025_1080p.mp4",
+    "nativeResolution": [
+      1920,
+      1080
+    ],
+    "aspectRatio": "16:9",
+    "recommendedDisplaySize": 1040,
+    "featured": false,
+    "priority": 11,
+    "projectType": "film",
+    "commissionStatus": "portfolio",
+    "tags": [],
+    "sourceResolutionNote": "Supplied dimensions, not a claim of original camera resolution.",
+    "videoSources": [
+      {
+        "name": "X Ray Monitor 10 09 2025_1080p(1).mp4",
+        "width": 1920,
+        "height": 1080,
+        "aspectRatio": "16:9",
+        "sampleAspectRatio": "1:1",
+        "duration": 15.0,
+        "bitrate": 3261609,
+        "bytes": 6143956,
+        "sha256": "dc8d9cc3acd00ced50b71525ca8c66ecde0be042d35c5ab45ce20e987359e5a7"
+      },
+      {
+        "name": "X Ray Monitor 10 09 2025_1080p(2).mp4",
+        "width": 1920,
+        "height": 1080,
+        "aspectRatio": "16:9",
+        "sampleAspectRatio": "1:1",
+        "duration": 15.0,
+        "bitrate": 3261609,
+        "bytes": 6143956,
+        "sha256": "dc8d9cc3acd00ced50b71525ca8c66ecde0be042d35c5ab45ce20e987359e5a7"
+      },
+      {
+        "name": "X Ray Monitor 10 09 2025_1080p.mp4",
+        "width": 1920,
+        "height": 1080,
+        "aspectRatio": "16:9",
+        "sampleAspectRatio": "1:1",
+        "duration": 15.0,
+        "bitrate": 3261609,
+        "bytes": 6143956,
+        "sha256": "dc8d9cc3acd00ced50b71525ca8c66ecde0be042d35c5ab45ce20e987359e5a7"
+      }
+    ]
+  },
+  {
+    "slug": "forbes",
+    "title": "30 Under 30",
+    "client": "Forbes India",
+    "category": "film",
+    "subCategory": "Promotional film",
+    "year": 2023,
+    "role": null,
+    "description": "A promotional film for Forbes India 30 Under 30, 2023.",
+    "note": "",
+    "headline": "The next generation.",
+    "video": {
+      "src": "/assets/forbes.mp4",
+      "poster": "/assets/forbes-poster.webp",
+      "width": 1124,
+      "height": 720,
+      "duration": 15.0
+    },
+    "assets": [],
+    "heroAsset": "/assets/forbes-poster.webp",
+    "poster": "/assets/forbes-poster.webp",
+    "preferredSource": "Forbes India 30 Under 30 2023 Online_720p.mp4",
+    "nativeResolution": [
+      1124,
+      720
+    ],
+    "aspectRatio": "281:180",
+    "recommendedDisplaySize": 850,
+    "featured": false,
+    "priority": 12,
+    "projectType": "film",
+    "commissionStatus": "portfolio",
+    "tags": [],
+    "sourceResolutionNote": "Supplied dimensions, not a claim of original camera resolution.",
+    "videoSources": [
+      {
+        "name": "Forbes India 30 Under 30 2023 Online_720p.mp4",
+        "width": 1124,
+        "height": 720,
+        "aspectRatio": "281:180",
+        "sampleAspectRatio": "1:1",
+        "duration": 15.0,
+        "bitrate": 1945969,
+        "bytes": 3665659,
+        "sha256": "eeef82c995a57973b68266805aa66780e42fd4edf0b660a62470b8fc2a19dffe"
+      }
+    ]
+  },
+  {
+    "slug": "hutch",
+    "title": "Hutch Live Search",
+    "client": "Hutch",
+    "category": "film",
+    "subCategory": "Animated viral",
+    "year": null,
+    "role": null,
+    "description": "An animated viral from an earlier era of the mobile internet.",
+    "note": "The surviving archive copy includes a visible conversion watermark.",
+    "headline": "Before the feed took over.",
+    "video": {
+      "src": "/assets/hutch.mp4",
+      "poster": "/assets/hutch-poster.webp",
+      "width": 640,
+      "height": 480,
+      "duration": 110.56
+    },
+    "assets": [],
+    "heroAsset": "/assets/hutch-poster.webp",
+    "poster": "/assets/hutch-poster.webp",
+    "preferredSource": "Animated Viral for Hutch Live Search._480p.mp4",
+    "nativeResolution": [
+      640,
+      480
+    ],
+    "aspectRatio": "4:3",
+    "recommendedDisplaySize": 480,
+    "featured": false,
+    "priority": 13,
+    "projectType": "film",
+    "commissionStatus": "portfolio",
+    "tags": [],
+    "sourceResolutionNote": "Supplied dimensions, not a claim of original camera resolution.",
+    "videoSources": [
+      {
+        "name": "Animated Viral for Hutch Live Search._480p(1).mp4",
+        "width": 640,
+        "height": 480,
+        "aspectRatio": "4:3",
+        "sampleAspectRatio": "1:1",
+        "duration": 110.56,
+        "bitrate": 645800,
+        "bytes": 8929801,
+        "sha256": "7032337d5dc6e49a61e129c5fef00e48106b841e84990773b8c4509a716e7034"
+      },
+      {
+        "name": "Animated Viral for Hutch Live Search._480p.mp4",
+        "width": 640,
+        "height": 480,
+        "aspectRatio": "4:3",
+        "sampleAspectRatio": "1:1",
+        "duration": 110.56,
+        "bitrate": 645800,
+        "bytes": 8929801,
+        "sha256": "7032337d5dc6e49a61e129c5fef00e48106b841e84990773b8c4509a716e7034"
+      },
+      {
+        "name": "Animated Viral for Hutch Live Search_1080p.mp4",
+        "width": 1920,
+        "height": 1080,
+        "aspectRatio": "16:9",
+        "sampleAspectRatio": "1:1",
+        "duration": 110.56,
+        "bitrate": 2525934,
+        "bytes": 34927323,
+        "sha256": "8d0b95ada218446f79c5a30cb68d52762ffc010c877d7778c57eb2200a721471"
+      }
+    ]
+  },
+  {
+    "slug": "busy-message",
+    "title": "Busy Message Campaign",
+    "client": "Vodafone",
+    "category": "digital",
+    "subCategory": "Microsite",
+    "projectType": "carousel",
+    "description": "A microsite created to launch Vodafone’s customised Busy Message feature, letting users record or upload their own message.",
+    "headline": "Leave a little of yourself on the line.",
+    "assets": [
+      {
+        "src": "/assets/busy-1.webp",
+        "width": 1024,
+        "height": 768,
+        "alt": "Busy Message timeline",
+        "source": "06-busy-message-microsite-01.jpg"
+      },
+      {
+        "src": "/assets/busy-2.webp",
+        "width": 1024,
+        "height": 768,
+        "alt": "Messages and waveform",
+        "source": "07-busy-message-microsite-02.jpg"
+      },
+      {
+        "src": "/assets/busy-3.webp",
+        "width": 1024,
+        "height": 768,
+        "alt": "Name and icon selection",
+        "source": "08-busy-message-microsite-03.jpg"
+      },
+      {
+        "src": "/assets/busy-4.webp",
+        "width": 1024,
+        "height": 768,
+        "alt": "Message audio player",
+        "source": "09-busy-message-microsite-04.jpg"
+      },
+      {
+        "src": "/assets/busy-5.webp",
+        "width": 1024,
+        "height": 768,
+        "alt": "Recording instructions",
+        "source": "10-busy-message-microsite-05.jpg"
+      },
+      {
+        "src": "/assets/busy-6.webp",
+        "width": 1024,
+        "height": 768,
+        "alt": "Upload message form",
+        "source": "11-busy-message-microsite-06.jpg"
+      },
+      {
+        "src": "/assets/busy-7.webp",
+        "width": 1024,
+        "height": 768,
+        "alt": "Upload instructions",
+        "source": "12-busy-message-microsite-07.jpg"
+      }
+    ],
+    "heroAsset": "/assets/busy-1.webp",
+    "priority": 1,
+    "featured": true,
+    "note": "An archival screen sequence. The original interface is preserved; this is not a live recreation of the service.",
+    "year": null,
+    "role": null,
+    "commissionStatus": "portfolio",
+    "tags": [],
+    "recommendedDisplaySize": 1100,
+    "videoSources": []
+  },
+  {
+    "slug": "zoozoo",
+    "title": "Welcome to the ZooZoo world",
+    "client": "Vodafone",
+    "category": "digital",
+    "subCategory": "Microsite",
+    "projectType": "images",
+    "description": "A digital home for the ZooZoos, preserved in an original interface screenshot.",
+    "headline": "A small world of its own.",
+    "assets": [
+      {
+        "src": "/assets/zoozoo.webp",
+        "width": 1183,
+        "height": 768,
+        "alt": "Vodafone ZooZoo microsite with character, navigation and video player",
+        "source": "02-vodafone-zoozoo-microsite.jpg"
+      }
+    ],
+    "heroAsset": "/assets/zoozoo.webp",
+    "priority": 2,
+    "featured": false,
+    "year": null,
+    "role": null,
+    "note": "",
+    "commissionStatus": "portfolio",
+    "tags": [],
+    "recommendedDisplaySize": 1100,
+    "videoSources": []
+  },
+  {
+    "slug": "emirates",
+    "title": "A world in a small window",
+    "client": "Emirates",
+    "category": "digital",
+    "subCategory": "Animated web banners",
+    "projectType": "banners",
+    "description": "Turning destinations and offers into compact, animated brand stories.",
+    "headline": "Small format. Faraway places.",
+    "assets": [
+      {
+        "src": "/assets/emirates-zurich.mp4",
+        "poster": "/assets/emirates-zurich-poster.webp",
+        "width": 320,
+        "height": 266,
+        "duration": 19.966667,
+        "alt": "Zurich"
+      },
+      {
+        "src": "/assets/emirates-usa.mp4",
+        "poster": "/assets/emirates-usa-poster.webp",
+        "width": 320,
+        "height": 266,
+        "duration": 19.466667,
+        "alt": "USA"
+      },
+      {
+        "src": "/assets/emirates-fifa.mp4",
+        "poster": "/assets/emirates-fifa-poster.webp",
+        "width": 320,
+        "height": 266,
+        "duration": 17.033333,
+        "alt": "FIFA World Cup"
+      }
+    ],
+    "heroAsset": "/assets/emirates-zurich-poster.webp",
+    "priority": 3,
+    "featured": false,
+    "year": null,
+    "role": null,
+    "note": "",
+    "commissionStatus": "portfolio",
+    "tags": [],
+    "recommendedDisplaySize": 1100,
+    "videoSources": []
+  },
+  {
+    "slug": "twenty-one",
+    "title": "21 Years Of CNBC-TV18",
+    "client": "CNBC-TV18",
+    "category": "print",
+    "subCategory": "Print campaign",
+    "projectType": "images",
+    "description": "I wrote the campaign copy for these print creatives.",
+    "headline": "21 Years Of CNBC-TV18",
+    "assets": [
+      {
+        "src": "/assets/twenty-one-0.webp",
+        "width": 1500,
+        "height": 1061,
+        "alt": "21 Years Of CNBC-TV18. Print execution 1",
+        "source": "01-cnbc-tv18-21-years-anniversary-print-1.jpg"
+      },
+      {
+        "src": "/assets/twenty-one-1.webp",
+        "width": 1500,
+        "height": 1061,
+        "alt": "21 Years Of CNBC-TV18. Print execution 2",
+        "source": "02-cnbc-tv18-21-years-anniversary-print-2.jpg"
+      },
+      {
+        "src": "/assets/twenty-one-2.webp",
+        "width": 1500,
+        "height": 1061,
+        "alt": "21 Years Of CNBC-TV18. Print execution 3",
+        "source": "03-cnbc-tv18-21-years-anniversary-print-3.jpg"
+      }
+    ],
+    "heroAsset": "/assets/twenty-one-0.webp",
+    "priority": 1,
+    "featured": true,
+    "year": null,
+    "role": "Campaign copywriting",
+    "note": "",
+    "commissionStatus": "portfolio",
+    "tags": [],
+    "recommendedDisplaySize": 1100,
+    "videoSources": []
+  },
+  {
+    "slug": "adidas",
+    "title": "adidas: Physics of Performance",
+    "client": "adidas",
+    "category": "ai",
+    "subCategory": "Proactive / speculative campaign",
+    "projectType": "images",
+    "description": "At the peak of performance, athletes make physics feel impossible.",
+    "headline": "At the peak of performance, athletes make physics feel impossible.",
+    "assets": [
+      {
+        "src": "/assets/adidas-0.webp",
+        "width": 928,
+        "height": 1152,
+        "alt": "Weightlessness: athlete clearing a high-jump bar",
+        "source": "Creative 1 - Weightlessness.png"
+      },
+      {
+        "src": "/assets/adidas-1.webp",
+        "width": 928,
+        "height": 1152,
+        "alt": "Momentum: runner breaking the finishing tape",
+        "source": "Creative 2 - Momentum.png"
+      },
+      {
+        "src": "/assets/adidas-2.webp",
+        "width": 1122,
+        "height": 1402,
+        "alt": "Impulse: tennis player striking the ball",
+        "source": "Creative 3 - Impulse.png"
+      }
+    ],
+    "heroAsset": "/assets/adidas-0.webp",
+    "priority": 1,
+    "featured": true,
+    "commissionStatus": "speculative",
+    "tags": [],
+    "year": 2026,
+    "note": "A self-initiated concept. Not commissioned by or affiliated with Adidas. AI-assisted imagery.",
+    "role": null,
+    "recommendedDisplaySize": 1100,
+    "videoSources": [],
+    "titleLines": [
+      "adidas",
+      "Physics of Performance"
+    ],
+    "aiTools": [
+      "Google Nano Banana Pro"
+    ]
+  }
+]
