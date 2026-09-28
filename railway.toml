@@ -1,4 +1,4 @@
-﻿[build]
+[build]
 builder = "NIXPACKS"
 buildCommand = "echo static-dist"
 
