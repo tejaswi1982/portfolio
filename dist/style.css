@@ -102,3 +102,7 @@
   .start{grid-row:5}
   .margin-note{grid-column:2;grid-row:5;margin-top:10px}
 }
+
+.nav nav a.home-link{display:inline-flex;align-items:center;min-height:44px}
+.ecosystem-links{display:flex;flex-direction:row;flex-wrap:wrap;gap:8px 18px}
+.ecosystem-links a{display:inline-flex;align-items:center;min-height:44px}
