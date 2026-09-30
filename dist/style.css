@@ -106,3 +106,5 @@
 .nav nav a.home-link{display:inline-flex;align-items:center;min-height:44px}
 .ecosystem-links{display:flex;flex-direction:row;flex-wrap:wrap;gap:8px 18px}
 .ecosystem-links a{display:inline-flex;align-items:center;min-height:44px}
+
+@media(max-width:768px){.enlarge>span{position:static;right:auto;bottom:auto;display:flex;align-items:center;justify-content:flex-end;width:100%;min-height:44px;box-sizing:border-box;padding:0 2px;background:transparent;font-size:0;line-height:1;opacity:1;transition:none}.enlarge>span::before{content:"View full size ↗";font-size:11px;line-height:1.4}}
