@@ -1098,5 +1098,108 @@
     "aiTools": [
       "Google Nano Banana Pro"
     ]
+  },
+  {
+    "slug": "openart",
+    "title": "Make What's on Your Mind",
+    "client": "OpenArt",
+    "category": "ai",
+    "subCategory": "Speculative brand film",
+    "year": null,
+    "role": "Visual development and editing",
+    "description": "An artist’s work leaves the canvas. A garment becomes a photograph, the photograph enters a gallery, and the image takes shape as sculpture.",
+    "note": "Self-initiated, unofficial work. Created independently of OpenArt.",
+    "headline": "An artist’s work leaves the canvas. A garment becomes a photograph, the photograph enters a gallery, and the image takes shape as sculpture.",
+    "video": {
+      "src": "/assets/openart.mp4",
+      "poster": "/assets/openart-poster.webp",
+      "width": 1920,
+      "height": 1080,
+      "duration": 37.25
+    },
+    "assets": [],
+    "heroAsset": "/assets/openart-poster.webp",
+    "poster": "/assets/openart-poster.webp",
+    "recommendedDisplaySize": 1120,
+    "priority": 1,
+    "projectType": "film",
+    "commissionStatus": "speculative",
+    "tags": [
+      "ai-films"
+    ],
+    "posterAlt": "A polished metal sculpture unfolds outside a sunlit gallery.",
+    "productionTools": [
+      "Google Veo 3.1 Fast",
+      "Codex"
+    ]
+  },
+  {
+    "slug": "the-academy",
+    "title": "The Best Is Still Unmade",
+    "client": "The Academy",
+    "category": "ai",
+    "subCategory": "Speculative brand film",
+    "year": null,
+    "role": "Montage and editorial direction",
+    "description": "A montage of human invention and achievement builds to a single line: the best is still unmade.",
+    "note": "Self-initiated, unofficial work. Created independently of The Academy.",
+    "headline": "A montage of human invention and achievement builds to a single line: the best is still unmade.",
+    "video": {
+      "src": "/assets/the-academy.mp4",
+      "poster": "/assets/the-academy-poster.webp",
+      "width": 1920,
+      "height": 1080,
+      "duration": 30
+    },
+    "assets": [],
+    "heroAsset": "/assets/the-academy-poster.webp",
+    "poster": "/assets/the-academy-poster.webp",
+    "recommendedDisplaySize": 1120,
+    "priority": 2,
+    "projectType": "film",
+    "commissionStatus": "speculative",
+    "tags": [
+      "ai-films"
+    ],
+    "posterAlt": "Archival images of invention, art and science arranged in a mosaic.",
+    "productionTools": [
+      "Codex",
+      "Suno (music)",
+      "Remotion",
+      "FFmpeg"
+    ]
+  },
+  {
+    "slug": "the-long-way-around",
+    "title": "The Long Way Around",
+    "client": "Personal film",
+    "category": "ai",
+    "subCategory": "AI-assisted motion design",
+    "year": null,
+    "role": "Creative coding and motion design",
+    "description": "An animated ride through the six destinations of my personal website.",
+    "note": "Personal website film.",
+    "headline": "An animated ride through the six destinations of my personal website.",
+    "video": {
+      "src": "/assets/the-long-way-around.mp4",
+      "poster": "/assets/the-long-way-around-poster.webp",
+      "width": 1920,
+      "height": 1080,
+      "duration": 52.2
+    },
+    "assets": [],
+    "heroAsset": "/assets/the-long-way-around-poster.webp",
+    "poster": "/assets/the-long-way-around-poster.webp",
+    "recommendedDisplaySize": 1120,
+    "priority": 3,
+    "projectType": "film",
+    "commissionStatus": "personal",
+    "tags": [
+      "ai-films"
+    ],
+    "posterAlt": "A motorcycle crosses an illustrated mountain road beneath the word Portfolio.",
+    "productionTools": [
+      "Opus 5.5 X Claude Code"
+    ]
   }
 ]

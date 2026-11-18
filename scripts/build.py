@@ -5,6 +5,8 @@ R=Path(__file__).resolve().parents[1];D=R/'dist';P=json.loads((R/'content/projec
 BASE='https://portfolio.abhinandantejaswi.com'
 # Keep experiments available in the model, but hidden until it has distinct work.
 PUBLIC_CATEGORIES=('film','digital','print','ai')
+ai_films = sorted((p for p in P if 'ai-films' in p['tags'] and p.get('video')), key=lambda p: p['priority'])
+
 def e(s):return html.escape(str(s),quote=True)
 def url(p):return '/work/'+p['slug']+'/'
 def display_title(p):return '<br>'.join(e(line) for line in p.get('titleLines',[p['title']]))
@@ -14,9 +16,11 @@ def image(a,cls='',eager=False):
 def head(title,desc,path):
  full_title = 'Abhinandan Tejaswi | Creative Director, Writer, Film and Digital' if path=='/' else title+' | Abhinandan Tejaswi'
  project=by.get(path.strip('/').split('/')[-1]) if path.startswith('/work/') else None
+ if path == '/ai-films/': project = ai_films[0]
  social=(project.get('poster') or project.get('heroAsset')) if project else '/og.png'
- social_alt=project['title'] if project else 'Abhinandan Tejaswi. Creative Direction. Writing. Film. Digital. Ideas.'
- return f'''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>{e(full_title)}</title><meta name="description" content="{e(desc)}"><meta name="theme-color" content="#eeeae1"><link rel="canonical" href="{BASE}{path}"><meta property="og:type" content="website"><meta property="og:title" content="{e(full_title)}"><meta property="og:description" content="{e(desc)}"><meta property="og:url" content="{BASE}{path}"><meta property="og:image" content="{BASE}{social}"><meta property="og:image:alt" content="{e(social_alt)}"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="{e(full_title)}"><meta name="twitter:description" content="{e(desc)}"><meta name="twitter:image" content="{BASE}{social}"><meta name="twitter:image:alt" content="{e(social_alt)}"><link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' fill='%23c84322'/%3E%3Ctext x='7' y='29' font-family='Arial' font-size='27' fill='%23eeeae1'%3Ea.%3C/text%3E%3C/svg%3E"><link rel="stylesheet" href="/style.css?v=media-spacing-20260930"><script type="module" src="/app.js"></script></head><body><a class="skip" href="#main">Skip to work</a>'''
+ social_alt=project.get('posterAlt',project['title']) if project else 'Abhinandan Tejaswi. Creative Direction. Writing. Film. Digital. Ideas.'
+ css_version = 'ai-films-20261118' if path in ('/', '/ai/', '/ai-films/') else 'media-spacing-20260930'
+ return f'''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>{e(full_title)}</title><meta name="description" content="{e(desc)}"><meta name="theme-color" content="#eeeae1"><link rel="canonical" href="{BASE}{path}"><meta property="og:type" content="website"><meta property="og:title" content="{e(full_title)}"><meta property="og:description" content="{e(desc)}"><meta property="og:url" content="{BASE}{path}"><meta property="og:image" content="{BASE}{social}"><meta property="og:image:alt" content="{e(social_alt)}"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="{e(full_title)}"><meta name="twitter:description" content="{e(desc)}"><meta name="twitter:image" content="{BASE}{social}"><meta name="twitter:image:alt" content="{e(social_alt)}"><link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' fill='%23c84322'/%3E%3Ctext x='7' y='29' font-family='Arial' font-size='27' fill='%23eeeae1'%3Ea.%3C/text%3E%3C/svg%3E"><link rel="stylesheet" href="/style.css?v={css_version}"><script type="module" src="/app.js"></script></head><body><a class="skip" href="#main">Skip to work</a>'''
 def nav(active='selected'):
  links=[('selected','Selected','/'),('film','Film','/film/'),('digital','Digital','/digital/'),('print','Print','/print/'),('ai','AI','/ai/'),('index','Index','/index/'),('about','About','/about/')]
  return '<header class="nav"><a class="wordmark" href="/" aria-label="Abhinandan Tejaswi home">at<span>.</span></a><nav aria-label="Portfolio">'+''.join(f'<a href="{u}" {"aria-current=page" if k==active else ""}>{label}</a>' for k,label,u in links)+'<a class="home-link" href="https://www.abhinandantejaswi.com/">Home ↗</a></nav><span class="nav-location">Mumbai, India</span></header>'
@@ -51,12 +55,18 @@ body+=f'''<section class="section digital-feature">{chapter('03','The early inte
 body+=f'''<section class="section print-feature">{chapter('04','Off the screen','Print / Campaigns')}<div class="section-title"><h2>Worth<br><em>a second look.</em></h2><a class="text-link" href="/print/">Print archive ↗</a></div><div class="print-pair">{''.join(enlarge(a) for a in by['twenty-one']['assets'])}</div><div class="caption-line"><h3>{e(by["twenty-one"]["title"])}</h3><a href="/work/twenty-one/">Print campaign / Three executions ↗</a></div></section>'''
 body+=interlude(1,'SOMEWHERE BETWEEN ONE THING AND THE NEXT.')
 body+=f'''<section class="section new-media-feature">{chapter('05','No brief required','Proactive / Speculative')}<div class="section-title"><h2>adidas<br><em>Physics of Performance</em></h2><div><p>{e(by["adidas"]["headline"])}</p><span class="eyebrow">{e(by["adidas"]["subCategory"])}</span></div></div><div class="adidas-spread">{''.join(enlarge(a) for a in by['adidas']['assets'])}</div><div class="caption-line"><p>AI-assisted imagery. A self-initiated concept.<br>Not commissioned by Adidas.</p><a class="text-link" href="/work/adidas/">Explore the idea ↗</a></div></section>'''
-body+='''<section class="new-medium"><span class="eyebrow">06 / The next medium</span><h2>Another tool.<br><em>The same curiosity.</em></h2><p>Ideas, art direction and storytelling.<br>Now with a few new ways to make them.</p><a class="text-link" href="/ai/">AI-assisted work ↗</a></section>'''
+lead = ai_films[0]
+def film_feature(project, label):
+ return f'''<div class="film-feature"><div><span class="eyebrow">{label}</span><h2>{e(project['title'])}</h2><p>{e(project['subCategory'])} / {e(project['client'])}</p></div><figure><img src="{project['poster']}" width="1920" height="1080" loading="lazy" alt="{e(project['posterAlt'])}"><figcaption><a class="text-link" href="/ai-films/">Explore AI films ↗</a></figcaption></figure></div>'''
+body += '<section class="section">' + film_feature(lead,'06 / AI films') + '</section>'
 body+=f'<section class="section">{chapter("07","Find your own way","The complete index")}<h2 class="index-heading">There’s more.</h2>{table(P,True)}</section>'
 save('/','Creative direction. Writing. Film. Digital.','Selected creative work by Abhinandan Tejaswi, across television, film, digital, print and new media.',body,'selected')
 for cat,title,desc in [('film','Moving pictures.','Writing and co-production across television promos, launches and brand films.'),('digital','Made to be clicked.','Microsites, animated banners and a few pieces of internet history.'),('print','Off the screen.','Campaigns made to be read, noticed and looked at again.'),('ai','Another way to make.','New tools inside a longer creative practice.')]:
  ps=[p for p in P if p['category']==cat or cat in p['tags']];ps=sorted(ps,key=lambda x:x['priority'])
  b=f'<section class="section collection"><span class="eyebrow">{cat.upper()} / {len(ps):02d} PROJECTS</span><h1>{title}</h1><p class="collection-intro">{desc}</p>'
+ if cat=='ai':
+  b += film_feature(lead,'AI Films') + '<h2 class="collection-subtitle">AI Image Work</h2>'
+  ps = [p for p in ps if not p.get('video')]
  if cat=='film':
   b+='<div class="film-list">'
   for n,p in enumerate(ps):b+=f'<div class="film-entry"><div><span class="eyebrow">{n+1:02d} / {e(p["client"])}</span><h2><a href="{url(p)}">{e(p["title"])} ↗</a></h2><p>{e(p["subCategory"])}</p>{result_line(p)}</div>{player(p)}</div>'
@@ -67,14 +77,36 @@ for cat,title,desc in [('film','Moving pictures.','Writing and co-production acr
   for p in ps:
    b+=f'<div class="collection-project"><div class="caption-line"><h2><a href="{url(p)}">{display_title(p)} ↗</a></h2><span class="eyebrow">{e(p["client"])} / {e(p["subCategory"])}</span></div><div class="{"adidas-spread" if p["slug"]=="adidas" else "print-pair"}">'+''.join(enlarge(a) for a in p['assets'])+'</div>'+(f'<p>{e(p["note"])}</p>' if p['note'] else '')+(f'<p>{e(p["description"])}</p>' if cat=='print' else '')+'</div>'
  b+='</section>';save('/'+cat+'/',{'film':'Film and television','digital':'Digital and interactive','print':'Print campaigns','ai':'AI and new media'}[cat],desc,b,cat)
+collection = ['<section class="section film-program"><header><span class="eyebrow">AI films / Selected motion work</span><h1>Films made<br><em>differently.</em></h1><p>Writing, direction, editing and production. New tools, with the decisions kept human.</p></header>']
+collection.append('<section aria-labelledby="original-films"><h2 class="eyebrow programme-label" id="original-films">01 / Original &amp; speculative films</h2>')
+for project in ai_films:
+ context = f"{project['subCategory']} / {project['client']}"
+ collection.append(f'<article class="program-entry"><div><span class="eyebrow">{e(context)}</span><h3>{e(project["title"])}</h3><p>{e(project["description"])}</p><small>{e(project["note"])}</small></div><div>{player(project)}<a class="text-link" href="{url(project)}">Film notes ↗</a></div></article>')
+collection.append('</section><section aria-labelledby="broadcast-films"><h2 class="eyebrow programme-label" id="broadcast-films">02 / AI-assisted broadcast work</h2><ul class="broadcast-grid">')
+for slug in ('prime', 'awaaz', 'gst', 'x-ray'):
+ project = by[slug]
+ video = project['video']
+ collection.append(f'''<li><a href="{url(project)}">
+   <img src="{e(project['poster'])}" width="{video['width']}" height="{video['height']}" loading="lazy" alt="">
+   <span class="eyebrow">{e(project['client'])} / {e(project['subCategory'])}</span>
+   <span class="broadcast-title">{e(project['title'])} <span aria-hidden="true">↗</span></span>
+ </a></li>''')
+collection.append('</ul></section></section>')
+save('/ai-films/', 'AI films', 'Original and speculative films, personal motion work and AI-assisted broadcast films by Abhinandan Tejaswi.', ''.join(collection), 'ai')
 for n,p in enumerate(P):
- b=f'<article class="project-detail section"><a class="breadcrumb" href="/{p["category"]}/">← {p["category"].title()}</a><div class="project-intro"><span class="eyebrow">{e(p["client"])} / {e(p["subCategory"])}</span><h1>{display_title(p)}</h1><p>{e(p["headline"])}</p></div>'
+ collection_path, collection_label = ('ai-films', 'AI films') if 'ai-films' in p['tags'] else (p['category'], p['category'].title())
+ b=f'<article class="project-detail section"><a class="breadcrumb" href="/{collection_path}/">← {collection_label}</a><div class="project-intro"><span class="eyebrow">{e(p["client"])} / {e(p["subCategory"])}</span><h1>{display_title(p)}</h1><p>{e(p["headline"])}</p></div>'
  if p.get('video'):b+=player(p)
  elif p['projectType']=='carousel':b+=carousel(p)
  elif p['projectType']=='banners':
   b+='<div class="banners">'+''.join(f'<figure><div class="banner-label">{a["alt"]} / 320 × 266</div><video controls playsinline muted preload="none" width="320" height="266" poster="{a["poster"]}" aria-label="Emirates {a["alt"]} banner"><source src="{a["src"]}" type="video/mp4"></video><figcaption>{a["alt"]}</figcaption></figure>' for a in p['assets'])+'</div>'
  else:b+='<div class="project-art '+('adidas-spread' if p['slug']=='adidas' else '')+'">'+''.join(enlarge(a) for a in p['assets'])+'</div>'
  b+=f'<div class="project-notes"><div>'+ (f'<span class="eyebrow">The context</span><p>{e(p["description"])}</p>' if p['description'] != p['headline'] else '') + result_line(p) +(f'<span class="eyebrow">A note</span><p>{e(p["note"])}</p>' if p['note'] else '')+'</div><dl><dt>Client / context</dt><dd>'+e(p['client'])+'</dd><dt>Format</dt><dd>'+e(p['subCategory'])+'</dd>'+(f'<dt>AI Tools</dt><dd>{e(", ".join(p["aiTools"]))}</dd>' if p.get('aiTools') else '')+(f'<dt>Year</dt><dd>{p["year"]}</dd>' if p['year'] else '')+(f'<dt>My role</dt><dd>{e(p["role"])}</dd>' if p['role'] else '')+(f'<dt>Duration</dt><dd>{duration(p["video"])}</dd>' if p.get('video') else f'<dt>Executions / screens</dt><dd>{len(p["assets"])}</dd>')+'</dl></div>'
+ if p.get('productionTools'):
+  tools = ', '.join(e(tool) for tool in p['productionTools'])
+  b = b.removesuffix('</dl></div>') + f'<dt>Production tools</dt><dd>{tools}</dd></dl></div>'
+ if p.get('commissionStatus')=='personal' and 'ai-films' in p['tags']:
+  b += '<p><a class="text-link" href="https://www.abhinandantejaswi.com/">Ride through the website ↗</a></p>'
  nxt=P[(n+1)%len(P)];b+=f'<a class="next-project" href="{url(nxt)}"><span class="eyebrow">Next turn</span><span>{e(nxt["title"])} ↗</span></a></article>'
  save(url(p),p['title'],p['description'],b,p['category'])
 save('/index/','Work index','Browse the creative archive by medium.',f'<section class="section index-page"><span class="eyebrow">The archive / {len(P)} projects</span><h1>Pick a thread.</h1>{table(P,True)}</section>','index')
@@ -83,7 +115,7 @@ save('/about/','About','Abhinandan Tejaswi. Creative Director, Writer and Maker.
 save('/404/','Page not found','Find your way back to the work.','<section class="section"><span class="eyebrow">An unexpected detour / 404</span><h1>Wrong turn.</h1><a class="text-link" href="/">Back to selected work ↗</a></section>','')
 (D/'404.html').write_text((D/'404/index.html').read_text())
 (D/'robots.txt').write_text('User-agent: *\nAllow: /\nSitemap: '+BASE+'/sitemap.xml\n')
-paths=['/','/film/','/digital/','/print/','/ai/','/index/','/about/']+[url(p) for p in P]
+paths=['/','/film/','/digital/','/print/','/ai/','/ai-films/','/index/','/about/']+[url(p) for p in P]
 (D/'sitemap.xml').write_text('<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'+''.join('<url><loc>'+BASE+p+'</loc></url>' for p in paths)+'</urlset>')
 shutil.rmtree(D/'experiments',ignore_errors=True)
 print('Built',len(paths),'routes.')

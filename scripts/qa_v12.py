@@ -14,7 +14,9 @@ def plain(path):
 allhtml='\n'.join(p.read_text() for p in D.rglob('*.html'))
 for bad in [r'CNBC\s+Prime',r'Channel V',r'Sai Dosa',r'21 years\. Still questioning\.',r'Zurich\. The USA\. The FIFA World Cup\.',r'strategic storytelling and impactful design',r'\bbinge\b','\u2014','\u2013']:
  check(not re.search(bad,allhtml,re.I),'Public copy excludes '+repr(bad))
-check(len(P)==18 and len([p for p in P if p['category']=='film'])==13,'18 projects and all 13 films retained')
+check([p["slug"] for p in P[:18]] == ['prime', 'awaaz', 'corner-seat', 'leadership', 'mad-about-markets', 'dot-com', 'bro-bytes-dosa', '777', 'bro-bytes-ashok', 'gst', 'x-ray', 'forbes', 'hutch', 'busy-message', 'zoozoo', 'emirates', 'twenty-one', 'adidas'], "Original archive sequence preserved")
+check([p["slug"] for p in P[18:]] == ["openart", "the-academy", "the-long-way-around"], "AI film programme included")
+check(len(P)==21 and len([p for p in P if p['category']=='film'])==13,'18 projects and all 13 films retained')
 check(not (D/'work/binge').exists() and not list((D/'assets').glob('binge-*')),'Removed campaign route and assets absent')
 check(B['prime']['client']=='CNBC-TV18 Prime' and B['prime']['role']=='Writing / Creative Direction / Co-production','Prime launch name and supplied role correct')
 check(B['x-ray']['client']=='CNBC-TV18 Prime' and B['x-ray']['subCategory']=='Brand Promo','Original No. 11 correctly branded')
@@ -35,10 +37,12 @@ if len(sys.argv)>1:
  with zipfile.ZipFile(sys.argv[1]) as z:
   for f in ['dist/app.js','content/identity.json']:check((R/f).read_bytes()==z.read(f),f+' byte-identical to V1')
   old=json.loads(z.read('content/projects.json'));oldby={p['slug']:p for p in old}
-  for p in P:
+  for slug,p in oldby.items():
+   p=B[slug]
    if p.get('video'):
     for k in ['video','preferredSource','nativeResolution','aspectRatio','recommendedDisplaySize']:check(p[k]==oldby[p['slug']][k],p['slug']+' preserves '+k)
-  for f in (D/'assets').iterdir():check(f.read_bytes()==z.read('dist/assets/'+f.name),'Media bytes unchanged: '+f.name)
+  for path in z.namelist():
+   if path.startswith('dist/assets/') and not path.endswith('/'):check((R/path).read_bytes()==z.read(path),'Media bytes unchanged: '+path)
   # The actual shared interaction and presentation renderers are unchanged.
   import ast
   oldast=ast.parse(z.read('scripts/build.py').decode());newast=ast.parse((R/'scripts/build.py').read_text())
@@ -47,7 +51,7 @@ if len(sys.argv)>1:
    check(f(oldast)==f(newast),name+' renderer preserved')
 # Validate filter membership using generated data-category values; JS is unchanged.
 rows=re.findall(r'class="work-row" data-category="([^"]*)"', (D/'index/index.html').read_text())
-check(len(rows)==18,'All index rows generated')
+check(len(rows)==21,'All index rows generated')
 for category in ['film','digital','print','ai','experiments']:check(sum(category in r.split() for r in rows)==sum(p['category']==category or category in p['tags'] for p in P),'Filter membership consistent: '+category)
 # V1.2 scope and launch checks.
 home=(D/'index.html').read_text(); selected=home.split('class="section selected"')[1].split('class="type-interlude"')[0]
